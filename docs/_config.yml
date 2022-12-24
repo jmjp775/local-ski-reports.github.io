@@ -22,10 +22,9 @@ title: Local Ski Reports
 email: jmjp775@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Where users can post reviews of grooming conditions at their local si trails.
-baseurl: "local-ski-reports.github.io" # the subpath of your site, e.g. /blog
+baseurl: "/docs" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username: jekyll
+github_username: jmjp775
 
 # Build settings
 theme: minima
@@ -35,18 +34,22 @@ plugins:
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
 # the internal "default list".
-#
+
 # Excluded items can be processed by explicitly listing the directories or
 # their entries' file path in the `include:` list.
-#
-# exclude:
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+
+exclude:
+  - docs/.sass-cache/
+  - docs/.jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+
+disable_disk_cache: true
+# To make sure that _site is created in the root, and not included in the build and npm test
+destination: ../_site
