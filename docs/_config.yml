@@ -49,6 +49,9 @@ exclude:
   - vendor/cache/
   - vendor/gems/
   - vendor/ruby/
+  - _site
+  - node_modules
+  - .gitignore
 
 disable_disk_cache: true
 # To make sure that _site is created in the root, and not included in the build and npm test
