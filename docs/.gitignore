@@ -68,7 +68,7 @@ Gemfile.lock
 vendor
 
 # local Jekyll files
-_site
+_site/
 .jekyll-metadata
 docs/.jekyll-cache
 
