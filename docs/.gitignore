@@ -68,9 +68,10 @@ Gemfile.lock
 vendor
 
 # local Jekyll files
-_site/
-.jekyll-metadata
+_site
+docs/.jekyll-metadata
 docs/.jekyll-cache
+_site/feed.xml
 
 # Visual Studio Code
 .vscode
